@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+max-width: 700px;
+margin:2px auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.3fr 1fr 1fr;
+grid-template-areas: 
+"header header" 
+"main aside"
+"teclado teclado";
+min-height: 100vh
+}
+
+header {
+  grid-area: header;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid green;
+}
+h1 {
+ margin: 2px auto;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+header button {
+  padding: 2px;
+  height: 25%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aElegir {
+  border: 3px solid red;
+  font-size: 50px;
+  grid-area: palabras;
+  letter-spacing: 10px;
+  padding: 5px;
+}
+.teclado {
+  padding: 2px;
+  border: 1px solid black;
+  grid-area: teclado;
+  display: grid;
+  grid-template-columns: repeat(9 ,1fr);
+  align-items: center;
+}
+.teclado div {
+  max-height: 30%;
+  padding: 2px;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
