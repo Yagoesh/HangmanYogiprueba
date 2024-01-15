@@ -85,12 +85,10 @@ function finalDeJuego() {
   }
 
   // perder
-  // if (numOfTries === 6){
-  //   perdiste.classList.remove("invisible")
-  // setTimeout(() => {
-  //   perdiste.classList.add("invisible")
-  // }, 650)
-  // }
+if (numOfTries === 6){
+ perdiste.classList.remove("invisible")
+
+   }
 }
 
 
