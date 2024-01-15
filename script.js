@@ -48,7 +48,7 @@ let victoria = false
 let indices = []
 function indice() {
   for(let i = 0 ; i < palabra.length ; i++) {
-    if (palabraAleatoria.toUpperCase()[i] === letter) {
+    if (palabra.toUpperCase()[i] === letter) {
       indices.push(i);
       let nuevoTexto = []
       for (let i=0 ; i < palabra.length ; i++) {
