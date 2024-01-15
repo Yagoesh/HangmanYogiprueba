@@ -63,10 +63,11 @@ function indice() {
     paraAdivinar.textContent = resultado
     if(!resultado.includes("_")){
       victoria=true
+        finalDeJuego()
     }
   }
   console.log(victoria)
-    finalDeJuego()
+  
   }
 }
 
