@@ -32,7 +32,8 @@ const perdiste = document.querySelector(".teclado .perdiste")
 const ganaste = document.querySelector(".teclado .ganaste")
 const cajaGanadora = document.querySelector(".cajaGanadora")
 const cajaPerdedora = document.querySelector(".cajaPerdedora")
-const reinicio = document.querySelector(".reset")
+const reinicio1 = document.querySelector(".reset1")
+const reinicio2 = document.querySelector(".reset2")
 
 // palabra aleatoria 
 
@@ -41,8 +42,8 @@ const reinicio = document.querySelector(".reset")
 const palabra = palabras[Math.floor(Math.random() * 100)]
 
 paraAdivinar.textContent = "_".repeat(palabra.length)
-// const palabraa = palabras[Math.floor(Math.random() * 100)]
-// console.log(palabraa)
+// const palabra = palabras[Math.floor(Math.random() * 100)]
+// console.log(palabra)
 
 let victoria = false
 let indices = []
@@ -124,20 +125,15 @@ for(const letra of letras){
 
   }
 
-    reset ()
+
   })
 }
-function reset () {
-  if(numOfTries === 6){
-       paraAdivinar.textContent = palabra
-      cajaPerdedora.classList.remove("invisible")
-        numOfTries = 0
-  }
-}
+
 
 function volverAJuegar () {
 
  location.reload()
 }
 
-reinicio.addEventListener("click" , volverAJuegar)
+reinicio1.addEventListener("click" , volverAJuegar)
+reinicio2.addEventListener("click" , volverAJuegar)
